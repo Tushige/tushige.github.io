@@ -1,3 +1,7 @@
+:root {
+    --main-project-entry-width: 500px;
+    --main-project-entry-height: 250px;
+}
 * {
     padding: 0;
 }
@@ -39,10 +43,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .project {
     display: flex;
+    width:auto;
+    flex: 1 1 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,10 +56,10 @@ body {
     text-align: center;
 }
 .image-container {
-    position: relative;
-    width: 350px;
-    height:150px;
     display: flex;
+    position: relative;
+    width: var(--main-project-entry-width);
+    height: var(--main-project-entry-height);
     z-index: 1;
 }
 .project img {
@@ -61,12 +67,11 @@ body {
     margin: 0 auto;
     display: block;
     background-repeat: no-repeat;
-    width: 350px;
-    height:150px;
+    width: var(--main-project-entry-width);
+    height: var(--main-project-entry-height);
 }
 .overlay {
     background-color: black;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +87,7 @@ body {
     transition: opacity 0.3s;
 }
 .overlay a{
+    cursor: pointer;
     text-decoration: none;
     font-size: 24px;
     color:white;
