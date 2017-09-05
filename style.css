@@ -48,7 +48,9 @@ body {
 .project {
     display: flex;
     width:auto;
-    flex: 1 1 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
