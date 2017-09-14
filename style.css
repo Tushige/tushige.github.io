@@ -20,6 +20,7 @@ body {
     width:30%;
     height:80%;
     border-radius:50%;
+    border: 2px solid #3a5a91;
 }
 
 .header-title {
